@@ -8,3 +8,5 @@ int main() {
 //    int age{0};
     cout<<"age="<<age<<endl;// look locally
 }
+
+// :: age used to different local and global 
