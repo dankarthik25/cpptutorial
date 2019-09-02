@@ -56,10 +56,15 @@ public:
     const char *get_str() const;
 };
 
-Mystring ::Mystring():str{nullptr}{
-    str = new char[1];
-    strcpy(str,"\0");
+Mystring ::Mystring():Mystring{"\0"}{
+    cout<<"\t\tUsing No-argument Constructor Overloading"<<endl;
 }
+// Mystring ::Mystring():str{nullptr}{
+//     cout<<"\t\tUsing No-argument Constructor Overloading"<<endl;
+
+//     str = new char[1];
+//     strcpy(str,"\0");
+// }
 
 Mystring::Mystring(const char *s):str{nullptr}{
     cout<<"\t\tUsing Constructor Overloading"<<endl;
